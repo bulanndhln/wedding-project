@@ -1,0 +1,692 @@
+:root{
+    --pink:#FFCFCF;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(134 167 136/0.7);
+    --white:#FFFDEC;
+    --green:#86A788;
+}
+
+body{
+    font-size: 1.4rem;
+    font-family: "Manjari", serif;
+    
+   
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image:url(img/background3.jpg);
+    background-size: cover; /* atau coba contain */
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index:-1;
+}
+.hero{
+    position:relative;
+    min-height:100vh;
+    color:#39603DFF;
+    
+
+}
+
+.hero h1, .hero h4, .hero p{
+    text-shadow: var(--shadow);
+}
+
+.hero h1{
+    color:#39603DFF;
+    font-family:"Ruthie", serif;
+    font-size: 5rem;
+
+}
+.hero img{
+    width: 60%;
+    
+}
+.hero h2{
+    font-family: "Euphoria Script", serif;
+    font-size: 4rem;
+
+}
+
+.hero h4{
+    font-size:1.3rem;
+    color:var(--pink);
+}
+
+.hero p {
+    font-size:1.4rem;
+}
+.hero .card {
+    border-radius:15px;
+    background-color: var(--green) !important; 
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
+}
+.hero .card h4{
+    margin:20px;
+    color:white;    
+}
+
+.hero a{
+    color: var(--white);
+    background-color:var(--green);
+    box-shadow:var(--shadow)
+}
+
+.hero a:hover{
+    background-color:var(--pink);
+    color: var(--green);
+}
+
+.mynavbar{
+    padding-left:20px;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter:blur(5px);
+}
+.mynavbar .offcanvas{
+    height:100vh;
+    
+    
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title{
+    font-family: "Euphoria Script", serif;
+    font-size:3rem;
+    color: #39603DFF;
+
+} 
+
+.mynavbar .nav-link{
+    text-transform:uppercase;
+    
+}
+.home .bismillah {
+    margin-top:10px;
+    font-size:40px;
+    color: #39603DFF;
+    font-family: "Arial", "Times New Roman", serif;
+    text-align: center;
+    direction: rtl; /* Teks kanan ke kiri */
+}
+.home .salam{
+    margin-top:10px;
+    color:#39603DFF;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.home {
+    background-image:url(img/bg2.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:100vh;
+    margin-top:-6rem;
+    padding-top:10rem;
+    padding-bottom:5rem;
+}
+
+.home h2{
+    color:#39603DFF;
+    font-family: "Euphoria Script", serif;
+    font-size:5rem;
+    
+}
+
+.home h3{
+    color:var(--green);
+    font-size:1.5rem;
+    margin-bottom:1rem;
+}
+
+.home p{
+    font-size:1.3rem;
+    color:#444444;
+
+}
+.home .couple{
+    margin-top:40px;
+}
+.home .couple h3{
+    font-family: "Euphoria Script", serif;
+    font-size:2.4rem;
+    color:#39603DFF;
+
+}
+
+.home .couple img {
+    width: 100%;
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    border: 2px solid #cccccc; /* Warna dan ketebalan border */
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opsional: Menambahkan bayangan */
+}
+
+.home .couple button{
+    background-color:var(--green);
+    color:white;
+    border:1px solid var(--green);
+    cursor: pointer;
+    
+}
+
+.home .couple button:hover{
+    background-color:var(--pink);
+    border:1px solid var(--pink);
+    
+}
+.home .couple a{
+    text-decoration:none;
+    color:white;
+    
+}
+.home .couple a:hover{
+    text-decoration:none;
+    color:var(--green);
+    
+}
+
+
+.info{
+    background-image:url(img/daun.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    color:white;
+    padding-top:7rem;
+    padding-bottom:7rem;
+}
+.info h2{
+    font-family: "Euphoria Script", serif;
+    font-size:5rem;
+    color:var(--pink);
+}
+
+.info .alamat{
+    font-size:1rem;
+}
+
+.info .card{
+    border-radius:15px;
+    background-color: rgba(255,255,255, 0.2) !important; 
+    color:white !important;
+    border: 1px solid var(--green);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+}
+.info .card-header{
+    border-bottom: 1px solid var(--green);
+    font-size:2.5rem;
+    
+    letter-spacing:0.1rem;
+    font-family: "Euphoria Script", serif;
+}
+
+.info .card-body{
+    font-size:1.4rem;
+}
+
+.info .card-footer{
+    border-top:1px solid var(--green);
+
+}
+
+.info .card-footer p{
+    font-size:1.4rem;
+}
+
+
+.info .card button{
+    background-color:var(--pink);
+    color:var(--green);
+    border:1px solid var(--pink);
+    cursor: pointer;
+    padding:5px;
+    border-radius:7px;
+    
+}
+
+.info .card button:hover{
+    background-color:#39603DFF;
+    border:1px solid #39603DFF;
+    
+}
+.info .card a{
+    text-decoration:none;
+    color:#39603DFF;
+    
+}
+.info .card a:hover{
+    text-decoration:none;
+    color:white;
+    
+}
+
+.rsvp{
+    padding-top:5rem;
+    padding-bottom:7rem;
+
+}
+.rsvp h1 {
+    font-family: "Euphoria Script", serif;
+    color:#39603DFF;
+    text-align: center;
+    font-size:5rem;
+    padding: 0px 0;
+    
+}
+.rsvp .kata{
+    color:var(--green);
+}
+
+.rsvp .stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.rsvp .stats div {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0 10px;
+    color: var(--green);
+    font-size: 1.2rem;
+}
+
+.rsvp .hadir { 
+    background-color: #39603DFF;
+    color:white !important; 
+}
+
+.rsvp .tidak-hadir { 
+    background-color: var(--pink);
+    color : var(--green) !important;
+}
+
+.rsvp .masih-ragu {     
+    background-color: var(--green);
+    color:white !important; 
+}
+
+.rsvp .form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.rsvp .form-container input,
+.rsvp .form-container textarea,
+.rsvp .form-container select,
+.rsvp .form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.rsvp .form-container button {
+    background-color: var(--green);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.rsvp .form-container button:hover {
+    background-color: var(--pink);
+    color : var(--green);
+}
+
+.rsvp .comments-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    border-radius: 8px;
+    background-color : var(--green);
+
+}
+.rsvp .comments-container h2{
+    font-family: "Euphoria Script", serif;
+    font-size:2.5rem;
+    text-align:center;
+    color:var(--pink);
+}
+.rsvp .comment {
+    display: flex; /* Tata letak horizontal untuk profil dan konten */
+    align-items: flex-start; /* Profil, nama, dan teks sejajar atas */
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative; /* Untuk elemen waktu di kanan atas */
+}
+
+.rsvp .comment .profil {
+    flex-shrink: 0; /* Foto profil tetap ukurannya */
+    font-size: 36px;
+    color: #fff;
+    margin-right: 10px; /* Jarak antara profil dan konten */
+}
+
+.rsvp .comment .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Nama di atas teks */
+    align-items: flex-start; /* Semua elemen rata kiri */
+}
+
+.rsvp .comment .name {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.rsvp .comment .text {
+    font-size: 14px;
+    color: #eeeeee;
+    margin: 0;
+}
+
+.rsvp .comment .time {
+    font-size: 12px;
+    color: #c9c9c9;
+    position: absolute; /* Tetap di kanan atas */
+    right: 10px;
+    top: 10px;
+}
+
+
+.rsvp .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.rsvp .pagination button {
+    background-color:var(--pink);
+    color:white;
+    border:1px solid var(--pink);
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+
+}
+.rsvp .pagination button:hover {
+    background-color:white;
+    color:var(--green);
+    border:1px solid white;
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.rsvp .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.rsvp button{
+    background-color:var(--green);
+    color:white;
+    border:1px solid var(--green);
+    cursor: pointer;
+}
+
+.rsvp button:hover{
+    background-color:var(--pink);
+    color:white;
+    border:1px solid var(--pink);
+}
+
+.gifts{
+    padding-top:2rem;
+    padding-bottom:7rem;
+
+}
+.gifts h2{
+    font-size:4.2rem;
+    color:white;
+    font-family: "Euphoria Script", serif;
+    font-size:5rem;
+}
+.gifts p{
+    font-size:1.4rem;
+    font-weight:300;
+    color:white;
+}
+.modal-dialog {
+    margin: auto; /* Pastikan modal selalu di tengah */
+}
+.modal-body img{
+    width:80%;
+    height: auto;
+}
+
+.modal-sm {
+    max-width: 300px;
+}
+
+.modal-body p{
+    font-size:1.75rem;
+    font-weight:400;
+    color:var(--green);
+}
+
+.gifts button{
+    background-color:var(--pink);
+    color:white;
+    border:1px solid var(--pink);
+}
+
+.gifts button:hover{
+    background-color:white;
+    color:var(--green);
+    border:1px solid white;
+}
+
+.modal-footer button{
+    background-color:var(--green);
+    color:white;
+    border:1px solid var(--green);
+}
+
+.modal-footer button:hover{
+    background-color:var(--pink);
+    color:white;
+    border:1px solid var(--pink);
+}
+
+.gifts .card {
+    background-color: var(--green) !important;
+    color:white ;
+    border: 1px solid var(--green);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.doa{
+    background-image:url(img/bg2.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.doa h2{
+    font-family: "Euphoria Script", serif;
+    color:#39603DFF;
+    text-align: center;
+    font-size:5rem;
+    padding: 0px 0;
+}
+
+.doa .doa1{
+    font-size:40px;
+    color: #39603DFF;
+    font-family: "Arial", "Times New Roman", serif;
+    text-align: center;
+    direction: rtl; /* Teks kanan ke kiri */    
+}
+.doa span{
+    font-style:italic;
+    font-weight:bold;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.doa p{
+    margin-bottom:2rem;
+    padding-bottom:2rem;
+}
+.last p{
+    margin-top:2rem;
+    color:var(--green);
+}
+.last span{
+    color:#39603DFF;
+    font-weight:bold;
+    font-size:18px;
+}
+.last img{
+    width:45%;
+}
+.last h2{
+    font-family: "Euphoria Script", serif;
+    color:#39603DFF;
+    text-align: center;
+    font-size:4rem;
+
+}
+
+footer{
+    padding:3rem;
+    background-color:var(--green);
+    color:white;
+}
+footer a{
+    color:var(--pink);
+    font-weight:bold;
+    text-decoration:none;
+}
+footer a:hover{
+    color:white;
+
+}
+.audio-icon-wrapper{
+    width:4rem;
+    height:4rem;
+    font-size:3rem;
+    position:fixed;
+    bottom:2.5rem;
+    right:2rem;
+    cursor:pointer;
+    color:var(--pink);
+    animation: rotating 4s linear infinite;
+    transform-origin:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    line-height:0;
+
+}
+
+@keyframes rotating{
+    from {
+        transform :rotate(0);
+    }
+    to{
+        transform:rotate(1turn);
+    }
+}
+
+
+
+/*Media Query*/
+/* extra large */
+@media (max-width:1200px){
+
+
+
+}
+
+
+/* laptop */
+@media (max-width:992px){
+    html{
+        font-size:75%;
+    }
+    .hero .card{
+        width:70%;
+    }
+    .doa .doa1{
+        font-size:30px;
+    }
+
+
+
+
+
+}
+
+/* tablet */
+@media (max-width:768px){
+    html{
+        font-size:65%;
+    }
+    .mynavbar .nav-link{
+    font-size:1.5rem;
+    text-align:center;
+    }
+    .sticky-top{
+        overflow:hidden;
+    }
+    .hero .card{
+        width:50%;
+    }
+    .home .bismillah{
+        font-size:30px;
+    }
+    .doa .doa1{
+        font-size:20px;
+    }
+
+    
+
+
+}
+
+/* mobile phone */
+@media (max-width:576px){
+    html{
+        font-size:60%;
+    }
+    .modal-dialog {
+        max-width: 75%; /* Modal menyesuaikan layar kecil */
+    }
+
+    .modal-body img {
+        width: 100%; /* Gambar menyesuaikan ukuran modal */
+        height: auto;
+    }
+    .hero .card{
+        width:50%;
+    }
+
+
+
+}
