@@ -4,6 +4,7 @@
     --shadow: 0 2px 2px rgb(134 167 136/0.7);
     --white:#FFFDEC;
     --green:#86A788;
+    --animate-duration: 2s
 }
 
 body{
@@ -63,13 +64,20 @@ body{
     font-size:1.4rem;
 }
 .hero .card {
-    border-radius:15px;
-    background-color: var(--green) !important; 
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
-}
+    border-radius:20px; 
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:var(--pink);
+    
+    }
 .hero .card h4{
     margin:20px;
-    color:white;    
+    color:#39603DFF!important;
+    font-size:18px;    
+}
+.hero .kesalahan p{
+    margin-top:10px;
+    font-size:12px;
 }
 
 .hero a{
@@ -336,6 +344,8 @@ body{
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    text-decoration:none;
+    color:#242424FF;
 }
 
 .rsvp .form-container button {
@@ -392,6 +402,7 @@ body{
 .rsvp .comment .name {
     font-weight: bold;
     color: white;
+    font-size:15px;
     margin-bottom: 5px;
 }
 
@@ -560,7 +571,7 @@ body{
 .last span{
     color:#39603DFF;
     font-weight:bold;
-    font-size:18px;
+    font-size:20px;
 }
 .last img{
     width:45%;
@@ -663,6 +674,9 @@ footer a:hover{
     }
     .doa .doa1{
         font-size:20px;
+    }
+    .hero .kesalahan p{
+        font-size:10px;
     }
 
     

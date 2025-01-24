@@ -25,6 +25,12 @@
     <!-- Bootstrap Icon  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -40,7 +46,11 @@
             <div class="card justify-content-center mx-auto ">
                 <h4>Kepada Bapak/Ibu/Saudara/i,<br> <span></span> beserta partner</h4>
             </div>
-            <a href="#home" class="btn btn-lg mt-3" onclick="showInvitation()">Lihat Undangan</a>
+            <div class="kesalahan">
+                <p>*Mohon maaf apabila terdapat kesalahan dalam penulisan nama/gelar.</p>
+            </div>
+            <a href="#home" class="btn btn-lg mt-3" onclick="showInvitation()">Lihat
+                Undangan</a>
 
         </main>
     </section>
@@ -71,34 +81,37 @@
 
     <section id="home" class="home">
         <div class="container">
-            <div class="row justify-content-center text-center">
+            <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-duration="1000">
                 <p>“Diantara tanda-tanda kekuasaan-Nya ialah diciptakan-Nya untuk pasangan hidup dari jenismu sendiri,
                     supaya kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang diantara kamu. Sesungguhnya yang
                     demikian itu menjadi tanda-tanda Kebesaran-Nya
                     bagi kaum berfikir”</p>
                 <h4>(Q.S ArRum :21)</h4>
-                <div class="row justify-content-center text-center bismillah">
+                <div class="row justify-content-center text-center bismillah" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-delay="200">
                     <span class="bismillah">
                         بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
                     </span>
                 </div>
                 <div class="row justify-content-center text-center">
-                    <p class="salam">Assalamualaikum Warahmatullahi Wabarakatuh</p>
-                    <p class="hormat">Dengan memohon Rahmat dan Ridho Allah SWT, Kami bermaksud mengundang
-                        Bapak/Ibu/Saudara/i. untuk hadir dalam:</p>
+                    <p class="salam" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Assalamualaikum
+                        Warahmatullahi Wabarakatuh</p>
+                    <p class="hormat" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Dengan memohon
+                        Rahmat dan Ridho Allah SWT, Kami bermaksud mengundang Bapak/Ibu/Saudara/i. untuk hadir dalam:
+                    </p>
                 </div>
 
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <h2>Acara Pernikahan</h2>
+                    <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">Acara Pernikahan</h2>
 
                 </div>
 
             </div>
             <div class="row couple">
                 <div class="col-lg-6">
-                    <div class="row">
+                    <div class="row" id="male" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="1000">
                         <div class="col-8 text-end">
                             <h3>Anas Fadlulloh</h3>
                             <p>Putra Pertama dari <br> Bapak Indra Gunawan <br> dan <br> Ibu Trisnawati</p>
@@ -113,7 +126,7 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="row mt-5">
+                    <div class="row " id="female" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="1200">
                         <div class="col-4">
                             <img src="img/4.png" alt="female" class="img-responsive rounded-circle">
                         </div>
@@ -134,13 +147,13 @@
     <section id="info" class="info">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-8 col-10 text-center">
+                <div class="col-md-8 col-10 text-center" data-aos="zoom-out" data-aos-duration="1000">
                     <h2>Save The Date</h2>
                 </div>
             </div>
             <div class="row justify-content-center mt-4">
                 <div class="col-md-5 col-10">
-                    <div class="card text-center text-bg-light mb-5">
+                    <div class="card text-center text-bg-light mb-5" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-header">
                             Akad Nikah
                         </div>
@@ -168,7 +181,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 col-10">
-                    <div class="card text-center text-bg-light">
+                    <div class="card text-center text-bg-light" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-header">
                             Resepsi Pernikahan
                         </div>
@@ -200,19 +213,20 @@
     </section>
     <section id="rsvp" class="rsvp">
         <div class="container">
-            <h1>Berikan Ucapan & Doa</h1>
-            <p class="kata justify-conten-center text-center">Ucapan selamat dan kebahagian bisa dari mana saja. Tanpa
-                jabat tangan atau pelukan hangat, masih ada simpul senyum dan doa baik yang kami harapkan.</p>
+            <h1 data-aos="zoom-in" data-aos-duration="1000">Berikan Ucapan & Doa</h1>
+            <p class="kata justify-conten-center text-center" data-aos="zoom-in" data-aos-duration="1000">Ucapan selamat
+                dan kebahagian bisa dari mana saja. Tanpa jabat tangan atau pelukan hangat, masih ada simpul senyum dan
+                doa baik yang kami harapkan.</p>
 
             <!-- Statistik -->
-            <div class="stats">
+            <div class="stats" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="hadir" id="hadirCount">0 Hadir</div>
                 <div class="tidak-hadir" id="tidakHadirCount">0 Tidak Hadir</div>
                 <div class="masih-ragu" id="masihRaguCount">0 Masih Ragu</div>
             </div>
 
             <!-- Form Ucapan -->
-            <div class="form-container">
+            <div class="form-container" data-aos="zoom-in" data-aos-duration="1000">
                 <form id="myForm">
                     <input type="text" name="nama" id="nama">
                     <textarea name="ucapan" id="ucapan" placeholder="Ucapan Anda" required></textarea>
@@ -227,7 +241,7 @@
             </div>
 
             <!-- Komentar -->
-            <div class="comments-container" id="commentsSection">
+            <div class="comments-container" id="commentsSection" data-aos="zoom-in" data-aos-duration="1000">
                 <h2>Komentar</h2>
                 <div id="comments">
 
@@ -241,7 +255,7 @@
     </section>
     <section id="gifts" class="gifts">
         <div class="container">
-            <div class="card rounded-circle ">
+            <div class="card rounded-circle " data-aos="zoom-in" data-aos-duration="1000">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-10 text-center">
                         <h2>Amplop Digital</h2>
@@ -288,26 +302,34 @@
     <section class="doa">
         <div class="container">
             <div class="row justify-content-center text-center">
-                <h2>Do'a Untuk Pengantin</h2>
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Do'a Untuk Pengantin</h2>
             </div>
             <div class="row justify-content-center text-center">
-                <div class="doa1">بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</div>
-                <span>“Baarakallahulaka wa baaraka ‘alaika wa jama’a bainakumaa fii khair”</span>
-                <p>“Semoga Allah memberkahimu di waktu bahagia dan memberkahimu di waktu susah, serta semoga Allah
-                    mempersatukan kalian berdua dalam kebaikan.”</p>
+                <div class="doa1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">بَارَكَ اللهُ لَكَ
+                    وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</div>
+                <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">“Baarakallahulaka wa baaraka
+                    ‘alaika wa jama’a
+                    bainakumaa fii khair”</span>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">“Semoga Allah memberkahimu di waktu
+                    bahagia dan memberkahimu di waktu susah, serta semoga Allah mempersatukan kalian berdua dalam
+                    kebaikan.” <br> HR. Tirmidzi
+                </p>
             </div>
         </div>
     </section>
     <section class="last">
         <div class="container">
             <div class="row justify-content-center text-center">
-                <p>Atas Kehadiran dan doa restu dari Bapak/Ibu/Saudara/i sekalian, kami mengucapkan Terima Kasih</p>
-                <span>Wassalamualaikum Warahmatullahi Wabarakatuh</span>
-                <img src="img/bride.png" alt="bride" class="img-responsive">
+                <p data-aos="zoom-in" data-aos-duration="1000">Atas Kehadiran dan doa restu dari Bapak/Ibu/Saudara/i
+                    sekalian, kami mengucapkan Terima Kasih</p>
+                <span data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">Wassalamualaikum Warahmatullahi
+                    Wabarakatuh</span>
+                <img src="img/bride.png" alt="bride" class="img-responsive" data-aos="zoom-in" data-aos-duration="1000"
+                    data-aos-delay="400">
             </div>
             <div class="row justify-content-center text-center">
-                <p>Kami yang berbahagia,</p>
-                <h2>Anas & Rena</h2>
+                <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">Kami yang berbahagia,</p>
+                <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">Anas & Rena</h2>
             </div>
         </div>
     </section>
@@ -336,6 +358,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <script>
         // This will init all countdowns with the same options, but different themes
         simplyCountdown('.simply-countdown-losange', {
@@ -368,10 +395,10 @@
     <script>
         const stickyTop = document.querySelector('.sticky-top');
         const offcanvas = document.querySelector('.offcanvas');
-        offcanvas.addEventListener('show.bs.offcanvas', function () {
+        offcanvas.addEventListener('show.bs.offcanvas', function() {
             stickyTop.style.overflow = 'visible';
         });
-        offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+        offcanvas.addEventListener('hidden.bs.offcanvas', function() {
             stickyTop.style.overflow = 'hidden';
         });
     </script>
@@ -387,7 +414,7 @@
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-            window.onscroll = function () {
+            window.onscroll = function() {
                 window.scrollTo(scrollTop, scrollLeft); // Menjaga posisi scroll
             };
             rootElement.style.scrollBehavior = 'auto'; // Menonaktifkan scroll behavior smooth
@@ -395,7 +422,7 @@
 
         // Fungsi untuk mengaktifkan scroll kembali
         function enableScroll() {
-            window.onscroll = function () {}; // Menghilangkan event listener scroll
+            window.onscroll = function() {}; // Menghilangkan event listener scroll
             rootElement.style.scrollBehavior = 'smooth'; // Mengaktifkan smooth scrolling
         }
 
@@ -415,7 +442,7 @@
         }
 
         // Event listener untuk ikon audio (menjalankan play/pause)
-        audioIconWrapper.onclick = function () {
+        audioIconWrapper.onclick = function() {
             if (isPlaying) {
                 song.pause();
                 audioIcon.classList.remove('bi-disc');
@@ -449,7 +476,7 @@
         let commentsData = [];
 
         // Fungsi untuk memuat komentar
-        const loadComments = async () => {
+        const loadComments = async() => {
             try {
                 const response = await fetch(scriptURL);
                 const data = await response.json();
@@ -509,7 +536,7 @@
         };
 
         // Fungsi untuk mengirim komentar
-        myForm.addEventListener("submit", async (e) => {
+        myForm.addEventListener("submit", async(e) => {
             e.preventDefault();
             const formData = new FormData(myForm);
             const data = {
