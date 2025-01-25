@@ -81,6 +81,7 @@ body{
 }
 
 .hero a{
+    border:1px var(--green);
     color: var(--white);
     background-color:var(--green);
     box-shadow:var(--shadow)
@@ -467,7 +468,7 @@ body{
 }
 
 .gifts{
-    padding-top:2rem;
+    padding-top:5rem;
     padding-bottom:7rem;
     
 
@@ -505,31 +506,48 @@ body{
     padding-bottom:20px;
 }
 
-.gifts .card .modal img{
+.gifts .modal img{
     width:30%;
 }
-.gifts .card .modal h1, {
+.gifts  .modal h1 {
     color:var(--green);
 }
-.gifts .card .modal  p{
+.gifts  .modal  p{
+    color:var(--green);
+    font-weight:bold;
+}
+.gifts  .modal  span{
     color:var(--green);
 }
-.gifts .card .modal  span{
-    color:var(--green);
-}
-.gifts .card .modal  hr{
-    color:var(--green);
-    border:2px solid #39603DFF;
-    
-    align:center;
+.gifts .modal  hr{
+    color: var(--green);
+    border: 2px solid #39603DFF;
+    width: 80%;
+    margin: 10px auto;
 
 }
+.gifts .modal button{
+    background-color:var(--pink);
+    color:white;
+    border:1px solid var(--pink);
+}
 
+.gifts .modal button:hover{
+    background-color:#39603DFF;
+    color:white;
+    border:1px solid white;
+}
+.gifts .modal  .salin button {
+    background-color:var(--green);
+    color:white;
+    border:1px solid white;
+}
 
-
-
-
-
+.gifts .modal .salin button:hover {
+    background-color:var(--pink);
+    color:white;
+    border:1px solid var(--pink);
+}
 .doa{
     background-image:url(img/bg2.png);
     background-size:cover;
@@ -579,7 +597,6 @@ body{
     color:#39603DFF;
     text-align: center;
     font-size:4rem;
-
 }
 
 footer{
@@ -594,8 +611,8 @@ footer a{
 }
 footer a:hover{
     color:white;
-
 }
+
 .audio-icon-wrapper{
     width:4rem;
     height:4rem;
@@ -623,17 +640,7 @@ footer a:hover{
     }
 }
 
-
-
 /*Media Query*/
-/* extra large */
-@media (max-width:1200px){
-
-
-
-}
-
-
 /* laptop */
 @media (max-width:992px){
     html{
@@ -645,11 +652,6 @@ footer a:hover{
     .doa .doa1{
         font-size:30px;
     }
-
-
-
-
-
 }
 
 /* tablet */
@@ -679,18 +681,12 @@ footer a:hover{
     .couple #female{
         margin-top:20px
     }
-
-    
-
-
 }
-
 /* mobile phone */
 @media (max-width:576px){
     html{
         font-size:60%;
     }
-    
     .hero .card{
         width:80%;
     }
