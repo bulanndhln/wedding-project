@@ -469,6 +469,7 @@ body{
 .gifts{
     padding-top:2rem;
     padding-bottom:7rem;
+    
 
 }
 .gifts h2{
@@ -481,23 +482,6 @@ body{
     font-size:1.4rem;
     font-weight:300;
     color:white;
-}
-.modal-dialog {
-    margin: auto; /* Pastikan modal selalu di tengah */
-}
-.modal-body img{
-    width:80%;
-    height: auto;
-}
-
-.modal-sm {
-    max-width: 300px;
-}
-
-.modal-body p{
-    font-size:1.75rem;
-    font-weight:400;
-    color:var(--green);
 }
 
 .gifts button{
@@ -512,18 +496,6 @@ body{
     border:1px solid white;
 }
 
-.modal-footer button{
-    background-color:var(--green);
-    color:white;
-    border:1px solid var(--green);
-}
-
-.modal-footer button:hover{
-    background-color:var(--pink);
-    color:white;
-    border:1px solid var(--pink);
-}
-
 .gifts .card {
     background-color: var(--green) !important;
     color:white ;
@@ -532,6 +504,32 @@ body{
     padding-top:20px;
     padding-bottom:20px;
 }
+
+.gifts .card .modal img{
+    width:30%;
+}
+.gifts .card .modal h1, {
+    color:var(--green);
+}
+.gifts .card .modal  p{
+    color:var(--green);
+}
+.gifts .card .modal  span{
+    color:var(--green);
+}
+.gifts .card .modal  hr{
+    color:var(--green);
+    border:2px solid #39603DFF;
+    
+    align:center;
+
+}
+
+
+
+
+
+
 .doa{
     background-image:url(img/bg2.png);
     background-size:cover;
@@ -667,7 +665,7 @@ footer a:hover{
         overflow:hidden;
     }
     .hero .card{
-        width:50%;
+        width:70%;
     }
     .home .bismillah{
         font-size:30px;
@@ -692,16 +690,12 @@ footer a:hover{
     html{
         font-size:60%;
     }
-    .modal-dialog {
-        max-width: 75%; /* Modal menyesuaikan layar kecil */
-    }
-
-    .modal-body img {
-        width: 100%; /* Gambar menyesuaikan ukuran modal */
-        height: auto;
-    }
+    
     .hero .card{
-        width:50%;
+        width:80%;
+    }
+    .hero .card h4{
+        font-size:15px;
     }
 
 
